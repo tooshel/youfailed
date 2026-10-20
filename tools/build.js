@@ -170,8 +170,8 @@ const page = ({ title, desc, path: p, body, current }) => `<!DOCTYPE html>
 <body>
 <div class="wrap">
 <header class="site">
-  <h1 class="mast"><a href="/">you failed<span class="dot">.</span></a></h1>
-  <p class="tag">Jim &amp; Sheldon write when something goes wrong. Since 2005.</p>
+  <h1 class="mast"><a href="/">you failed<span class="dot">.us</span></a></h1>
+  <p class="tag">Today is the yesterday that we will regret tomorrow.</p>
   <nav class="site">
     <a href="/" ${current === 'home' ? 'aria-current="page"' : ''}>Posts</a>
     <a href="/about/" ${current === 'about' ? 'aria-current="page"' : ''}>About</a>
@@ -207,7 +207,7 @@ for (const p of posts) {
 }
 listHtml += '</ul>';
 fs.writeFileSync(path.join(OUT, 'index.html'), page({
-  title: 'you failed.', desc: 'Jim & Sheldon write when something goes wrong. Programming, games, engineering management, and complaints. Since 2005.',
+  title: 'you failed.us', desc: 'Jim & Sheldon write when something goes wrong. Programming, games, engineering management, and complaints. Since 2005.',
   path: '/', body: listHtml, current: 'home',
 }));
 
@@ -227,21 +227,21 @@ posts.forEach((p, idx) => {
   ${pager}
   </article>`;
   const firstPara = (p.body.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim()).slice(0, 150);
-  fs.writeFileSync(path.join(dir, 'index.html'), page({ title: p.title + ' — you failed.', desc: firstPara, path: `/${p.slug}/`, body }));
+  fs.writeFileSync(path.join(dir, 'index.html'), page({ title: p.title + ' — you failed.us', desc: firstPara, path: `/${p.slug}/`, body }));
 });
 
 // about
 if (about) {
   fs.mkdirSync(path.join(OUT, 'about'), { recursive: true });
   fs.writeFileSync(path.join(OUT, 'about/index.html'), page({
-    title: 'About — you failed.', desc: 'What this site is and why it exists.',
+    title: 'About — you failed.us', desc: 'What this site is and why it exists.',
     path: '/about/', body: `<article><h1>About</h1>${normalizeLegacy(about.html).replace(/<(\/?)h4>/g, '<$1h2>')}</article>`, current: 'about',
   }));
 }
 
 // 404
 fs.writeFileSync(path.join(OUT, '404.html'), page({
-  title: 'Not found — you failed.', desc: 'This page does not exist.', path: '/404',
+  title: 'Not found — you failed.us', desc: 'This page does not exist.', path: '/404',
   body: '<article><h1>404. You failed.</h1><p>Well, one of us did. That page isn&rsquo;t here.</p><p><a href="/">Browse every complaint since 2005 &rarr;</a></p></article>',
 }));
 
@@ -259,7 +259,7 @@ const rssItems = posts.slice(0, 20).map((p) => `<item>
 </item>`).join('\n');
 fs.writeFileSync(path.join(OUT, 'feed.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"><channel>
-<title>you failed.</title>
+<title>you failed.us</title>
 <link>https://www.youfailed.us/</link>
 <description>Jim &amp; Sheldon write when something goes wrong.</description>
 ${rssItems}
