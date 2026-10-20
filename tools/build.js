@@ -285,5 +285,6 @@ if (fs.existsSync(MEDIA_NEW)) {
   }
 }
 fs.writeFileSync(path.join(OUT, '.nojekyll'), '');
+fs.writeFileSync(path.join(OUT, 'CNAME'), 'www.youfailed.us' + String.fromCharCode(10)); // Pages drops the domain if this file ever disappears
 console.log(`built ${posts.length} posts + about + feed; media copied: ${copied}, missing: ${missing.length}`);
 if (missing.length) console.log('missing:', missing.slice(0, 10).join('\n  '));
