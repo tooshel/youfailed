@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "broken-image",
+        "value": "*",
+        "files": [
+          "tools/build.js"
+        ],
+        "createdAt": "2026-10-20T07:31:55.961Z",
+        "reason": "Claude triage: build.js L39 is a regex (/<img[^>]*>/) parsing legacy WordPress captions, not a rendered img tag"
+      }
+    ]
+  }
+}

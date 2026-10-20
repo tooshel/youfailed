@@ -274,7 +274,7 @@ for (const r of refs) {
   const src = path.join(MEDIA_SRC, r);
   const dst = path.join(OUT, 'files', r);
   if (fs.existsSync(src)) { fs.mkdirSync(path.dirname(dst), { recursive: true }); fs.copyFileSync(src, dst); copied++; }
-  else missing.push(r);
+  else if (!fs.existsSync(path.join(ROOT, 'media', r))) missing.push(r); // new-post images ship from media/ below
 }
 // media/ holds images for new markdown posts; ships to /files/
 const MEDIA_NEW = path.join(ROOT, 'media');
