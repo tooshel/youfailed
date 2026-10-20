@@ -247,7 +247,7 @@ fs.writeFileSync(path.join(OUT, '404.html'), page({
 
 // favicon: red period on ink square
 fs.writeFileSync(path.join(OUT, 'favicon.svg'),
-  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="6" fill="#1d1d1f"/><text x="7" y="23" font-family="Helvetica,Arial,sans-serif" font-weight="800" font-size="20" fill="#fff">yf</text><circle cx="26" cy="23" r="3" fill="#c22f2f"/></svg>');
+  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="6" fill="#1d1d1f"/><text x="6" y="26" font-family="Helvetica,Arial,sans-serif" font-weight="800" font-size="26" fill="#e05252">F</text><circle cx="25" cy="22.5" r="5" fill="#e05252"/></svg>');
 
 // RSS (newest 20)
 const rssItems = posts.slice(0, 20).map((p) => `<item>
