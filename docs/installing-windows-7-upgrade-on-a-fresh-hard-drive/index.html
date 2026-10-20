@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Installing Windows 7 Upgrade on a fresh hard drive — you failed.</title>
+<meta name="description" content="Okay, so I decided to install Windows 7. Even if it's all marketing it can't be as bad as Vista and 9 years is long enough for XP. I went to the MS st">
+<meta property="og:title" content="Installing Windows 7 Upgrade on a fresh hard drive — you failed.">
+<meta property="og:description" content="Okay, so I decided to install Windows 7. Even if it's all marketing it can't be as bad as Vista and 9 years is long enough for XP. I went to the MS st">
+<meta property="og:url" content="https://www.youfailed.us/installing-windows-7-upgrade-on-a-fresh-hard-drive/">
+<link rel="alternate" type="application/rss+xml" title="you failed." href="/feed.xml">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>
+:root { --bg:#fbfaf8; --ink:#1d1d1f; --soft:#6d6d70; --accent:#c22f2f; --rule:#e7e4df; --code:#f1efe9; color-scheme: light; }
+@media (prefers-color-scheme: dark) { :root { --bg:#161616; --ink:#e8e6e3; --soft:#9a9893; --accent:#e05252; --rule:#2c2c2c; --code:#222; color-scheme: dark; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--ink);
+  font: 17px/1.65 Charter, 'Bitstream Charter', Cambria, Georgia, serif; }
+.wrap { max-width: 44rem; margin: 0 auto; padding: 0 20px 4rem; }
+header.site { padding: 3.2rem 0 0; }
+.mast { font: 800 clamp(2.4rem,7vw,3.4rem)/1 -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+  letter-spacing: -0.03em; margin:0; }
+.mast a { color: var(--ink); text-decoration: none; }
+.mast .dot { color: var(--accent); }
+.tag { color: var(--soft); margin: .6rem 0 0; font-size: .95rem; }
+nav.site { margin: 1.6rem 0 0; padding-bottom: 1rem; border-bottom: 1px solid var(--rule);
+  font-family: -apple-system,'Segoe UI',Helvetica,Arial,sans-serif; font-size: .85rem; }
+nav.site a { color: var(--soft); text-decoration: none; text-transform: uppercase; letter-spacing: .12em; margin-right: 1.4rem; }
+nav.site a:hover, nav.site a[aria-current] { color: var(--accent); }
+h2.year { font: 700 1rem -apple-system,'Segoe UI',Helvetica,Arial,sans-serif; letter-spacing:.14em;
+  color: var(--accent); margin: 2.6rem 0 .4rem; }
+ul.posts { list-style:none; margin:0; padding:0; }
+ul.posts li { display:flex; gap:1rem; padding:.42rem 0; border-bottom:1px dotted var(--rule); align-items: baseline; }
+ul.posts time { color:var(--soft); font-size:.85rem; min-width:4.6rem; font-family:-apple-system,'Segoe UI',sans-serif; }
+ul.posts a { color:var(--ink); text-decoration:none; }
+ul.posts a:hover { color:var(--accent); }
+article h1 { font-size:2rem; line-height:1.2; letter-spacing:-0.015em; margin:2.4rem 0 .3rem; }
+.meta { color:var(--soft); font-size:.9rem; margin:0 0 2rem; font-family:-apple-system,'Segoe UI',sans-serif; }
+article img { max-width:100%; height:auto; border-radius:4px; }
+article figure { margin:1.6rem 0; }
+article figcaption { color:var(--soft); font-size:.85rem; margin-top:.4rem; }
+article a { color:var(--accent); text-decoration-thickness:1px; text-underline-offset:3px; }
+article pre { background:var(--code); padding:1rem 1.2rem; overflow-x:auto; border-radius:6px; font-size:.85rem; line-height:1.5; }
+article code { font-family: ui-monospace, 'Cascadia Code', Consolas, monospace; font-size:.9em; background:var(--code); padding:.1em .35em; border-radius:3px; }
+article pre code { background:none; padding:0; }
+article blockquote { margin:1.4rem 0; padding:.2rem 0 .2rem 1.2rem; border-left:3px solid var(--accent); color:var(--soft); }
+.pager { display:flex; justify-content:space-between; gap:2rem; margin-top:3.4rem; padding-top:1.2rem; border-top:1px solid var(--rule);
+  font-family:-apple-system,'Segoe UI',sans-serif; font-size:.9rem; }
+.pager a { color:var(--soft); text-decoration:none; max-width:46%; }
+.pager a:hover { color:var(--accent); }
+footer.site { margin-top:4rem; padding-top:1.2rem; border-top:1px solid var(--rule);
+  color:var(--soft); font-size:.85rem; font-family:-apple-system,'Segoe UI',sans-serif; }
+footer.site a { color:var(--soft); }
+::selection { background:var(--accent); color:#fff; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+  <h1 class="mast"><a href="/">you failed<span class="dot">.</span></a></h1>
+  <p class="tag">Jim &amp; Sheldon write when something goes wrong. Since 2005.</p>
+  <nav class="site">
+    <a href="/" >Posts</a>
+    <a href="/about/" >About</a>
+    <a href="/feed.xml">RSS</a>
+  </nav>
+</header>
+<article>
+  <h1>Installing Windows 7 Upgrade on a fresh hard drive</h1>
+  <p class="meta">November 6, 2009 &middot; Sheldon</p>
+  <p>Okay, so I decided to install Windows 7.  Even if it's all marketing it can't be as bad as Vista and 9 years is long enough for XP.</p>
+<p>I went to the MS store in Scottsdale and bought a retail upgrade copy of Family Pack Home Premium.  The install failed in 4 ways on computer #1 because there were no drivers for the SATA controller.  On computer #2 the 64-bit version installed flawlessly. I did a fresh install to the same hard drive that had and existing install of 32-bit Windows XP. It was really cool that in the "Windows.OLD" folder had the original Windows folder as well as Documents and Settings and Program Files.  It was nice that those were out of the way but not gone.</p>
+<p>After trying a few things out #2 for a few days I decided to go ahead and install on my main computer.  On this one I decide I'll install to a separate hard drive. I figured during the setup I could point to the other hard drive to tell it where Windows was installed or maybe the installer would ask for the disk (which I have).</p>
+<p>I struggled for an hour when the installer asked for the Product Key and told me simply "The product key is not valid".  After typing and retyping and waiting for my wife to check it to make sure I wasn't going crazy I finally realized it was because it wasn't an upgrade. I read online that you can skip the Product Key and finish the install so I blank out the key and finish the install.</p>
+<p>Of course, I couldn't activate and this time the error message tells me it's because I got the upgrade version and it's not supported for new installs.  So, I could just reinstall and override my copy of XP but that made me nervous since someday I could see myself having to go though this in the future.  So I decided to give Microsoft a call . . . .</p>
+<p>Took a while to find a number online and then that was the wrong number (Activation) so I got a new number for technical support (1-800-936-5700 in case you are wondering).  I had to convince the support guy that what I was doing was reasonable (I mean, what if my hard drive died . . . would I need to install XP on the old drive and then upgrade again? ... what if I had an OEM machine and I didn't have the disk and couldn't get it from the manufacturer anymore?).  After talking to that guy for about 30 minutes it seemed like I was going to have to install XP and upgrade from there.  I held steady and kept talking and wouldn't let him off the phone.  Finally he created a technical support case and transferred me.  I explained the situation to the new guy and he understood and said that install to a fresh hard drive is not allowed with an upgrade copy but the good news is there is a workaround!  Awesome!</p>
+<p>So here is the workaround and the reason I wrote this in the first place.  Luckily no one reads this blog so I'm not worried about getting in trouble.</p>
+<p>Steps:<br>
+<ol><br>
+	<li> Go to the registry to this key: HKLMSOFTWAREMicrosoftWindowsCurrentVersionSetupOOBE</li><br>
+	<li>Change: MediaBootInstall value to 0</li><br>
+	<li>Run this command from the command prompt (as administrator and in the system32 directory): cscript.exe slmgr.vbs -rearm</li><br>
+</ol><br>
+If you need more help that that you should probably just call Microsoft yourself!</p>
+<p>Other notes:<br>
+<ul><br>
+	<li>The technician on the phone was very careful about wanting to control my machine and asked over and over if it was okay.  He was careful to explain what was going to happen before he did anything.  I had to install "Microsoft Easy Assist" so he could control the computer and after the session ended Easy Assist asked if I wanted to uninstall . . . very thoughtful!  A nice touch indeed.</li><br>
+	<li>I tired it on some older hardware (computer #1) and there were no drivers for the SATA controller and according to the Intel website, Intel has no plans to release drivers.  There WAS Vista drivers and those would probably work.  Why not just let me try those out?  I downloaded but it was an installer and it was just to replace drivers that came with Windows.  So annoying!  Nothing worked! I blame Intel for this problem, not Microsoft.</li><br>
+	<li>If there was a family pack for Professional I would have gladly paid a little more.  On one of the computers I plan on doing the "Anytime Upgrade" to the Pro version (so I can do XP mode) and I'll write about that later.</li><br>
+	<li>I later when to install iTunes and wanted to copy over the iTunes Library.XML file and it wasn't anywhere in the Windows.OLD folder.  Had to go to my backup. Strange.</li><br>
+</ul><br>
+Sheldon</p>
+  <div class="pager">
+    <a href="/milestone-i-cant-tweet-about/">&larr; Milestone I can't tweet about</a>
+    <a href="/so-much-for-have-a-64-bit-os/" style="text-align:right">So much for having a 64-bit OS &rarr;</a>
+  </div>
+  </article>
+<footer class="site">
+  <p>&copy; 2005&ndash;2026 Jim deVos &amp; Sheldon McGee &middot; survived WordPress, now plain HTML</p>
+</footer>
+</div>
+</body>
+</html>
